@@ -146,3 +146,6 @@ I had a quick go at trying to scrape the chrome store in order to automatically 
 
 You can find it on <a target="_blank" href="https://github.com/ewancolyer/chrome-extension-tools">GitHub</a>, any questions ping me a message on the <a href="https://MACAdmins.org">Mac Admins</a> slack
 
+# Followups
+
+Thanks to Gavin in the #london channel for sharing <a target="_blank" href="https://www.youtube.com/watch?v=ompZ_fwhL4s">this talk</a> that gives some background info around the risks of having extensions, some examples of this actually happening and some other ways to deal with these issues.
