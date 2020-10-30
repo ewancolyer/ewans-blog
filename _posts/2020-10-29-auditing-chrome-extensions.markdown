@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Auditing installed chrome extensions"
-date:   2020-10-30 11:00:00 +0000
+date:   2020-10-30 16:00:00 +0000
 categories: chrome security
 ---
 # About
