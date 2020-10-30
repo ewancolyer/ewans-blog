@@ -9,7 +9,7 @@ So, you want to work out what chrome extensions your users have installed, but d
 
 This isn't a sound way to get all extensions installed on a device, it is intended to help gauge the impact on moving to a model where you have a blocklist or an allowlist for chrome extensions.
 
-I think it is often underestimated how much a chrome extension can make an employees life easier and going in all guns blazing moving to an allowlist without working out the impact might lead to an <a target="_blank" href="https://youtu.be/w8KQmps-Sog?t=162">uprising</a>, or your employees just trying to avoid these measures.
+I think it is often underestimated how much a chrome extension can make an employees' life easier and going in all guns blazing moving to an allowlist without working out the impact might lead to an <a target="_blank" href="https://youtu.be/w8KQmps-Sog?t=162">uprising</a>, or your employees just trying to avoid these measures.
 
 # What do we need?
 
@@ -108,7 +108,7 @@ Your `input/extensionsMapper` file should look like the below, obviously you wou
     },
 ]{% endhighlight %}
 
-If the extension is found in the extensionsMapper array it is referred to as a "Known extension", otherwise a "Unknown extension". Below you will see an example of an object that is in the known list:
+If the extension is found in the extensionsMapper array it is referred to as a "Known extension", otherwise an "Unknown extension". Below you will see an example of an object that is in the known list:
 
 {% highlight json %}
 [
@@ -144,5 +144,5 @@ I had a quick go at trying to scrape the chrome store in order to automatically 
 
 # Where to find this project?
 
-You can find it on <a target="_blank" href="https://github.com/ewancolyer/chrome-extension-tools">GitHub</a>, any questions ping me a message on the <a href="MACAdmins.org">Mac Admins</a> slack
+You can find it on <a target="_blank" href="https://github.com/ewancolyer/chrome-extension-tools">GitHub</a>, any questions ping me a message on the <a href="https://MACAdmins.org">Mac Admins</a> slack
 
