@@ -23,7 +23,7 @@ title: Ewans blog
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my blog, hopefully it will be home to some tech things that I consider worth sharing
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "blog.ewan-colyer.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.ewan-colyer.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  ewancolyer
 
