@@ -7,9 +7,9 @@ categories: chrome security
 # About
 So, you want to work out what chrome extensions your users have installed, but don't want to use <a target="_blank" href="https://support.google.com/chrome/a/answer/9116814?hl=en">Google's Chrome Cloud Managment</a> (free for 1 admin user, but paid after that), what do you do?
 
-This isn't a sound way to get all extensions installed on a device, it is intended to help guage the impact on moving to a model where you have a blocklist or an allowlist for chrome extensions.
+This isn't a sound way to get all extensions installed on a device, it is intended to help gauge the impact on moving to a model where you have a blocklist or an allowlist for chrome extensions.
 
-I think it is often underestimated how much a chrome extension can make a employees life easier and going in all guns blazing moving to an allowlist without working out the impact might lead to an <a target="_blank" href="https://youtu.be/w8KQmps-Sog?t=162">uprising</a>, or your employees just trying to avoid these mesures.
+I think it is often underestimated how much a chrome extension can make an employees life easier and going in all guns blazing moving to an allowlist without working out the impact might lead to an <a target="_blank" href="https://youtu.be/w8KQmps-Sog?t=162">uprising</a>, or your employees just trying to avoid these measures.
 
 # What do we need?
 
@@ -23,7 +23,7 @@ Thanks to <a target="_blank" href="https://stackoverflow.com/questions/17377337/
 
 So what do we do from here? my first thought is that we can just `ls` the directory, chuck commas between each extension ID and echo it into an extension attribute in your chosen MDM.
 
-Here is how I did it, its not necessarily the neatest, or best way to do it. But its the way that worked for me.
+Here is how I did it, it’s not necessarily the neatest or best way to do it. But it’s the way that worked for me.
 
 {% highlight zsh %}
 #!/bin/zsh
@@ -79,7 +79,7 @@ So now we have our list of extensions into our MDM, we have 2 options:
 
 > note, the script that I have written expects only 2 columns and will have to be adapted to expect more than that.
 
-I decided to use a CSV for this, mostly becuase having not used my MDM's API before it would be quicker to import it for this one off task.
+I decided to use a CSV for this, mostly because having not used my MDM's API before it would be quicker to import it for this one-off task.
 
 
 # What does the script do?
@@ -97,7 +97,7 @@ The array that is spat out by the csvLoader() will look something like the below
 ["id1","id2","id3","id2","id3","id1"]
 {% endhighlight %}
 
-Your `input/extensionsMapper` file should looks like the below, obiously you would duplicate this object for each extension, the script then iterates through this array for every extension and works out whether it should add it to the known or unknown list.
+Your `input/extensionsMapper` file should look like the below, obviously you would duplicate this object for each extension, the script then iterates through this array for every extension and works out whether it should add it to the known or unknown list.
 
 {% highlight json %}
 [
@@ -133,13 +133,14 @@ and this is one in the Unknown list:
 ]
 {% endhighlight %}
 
-Hopefully the info in these 2 arrays will give you enough info for you to start making an assesment as to the impact of blocking an extension in your enviroment.
+Hopefully, the info in these 2 arrays will give you enough info for you to start making an assessment as to the impact of blocking an extension in your environment.
 
 
 # Plans for the future/issues:
 
 I have come across a fair few extensions that can not be found in the chrome store, so I am thinking of adding a "KnowUnknown" array to take these out of the unknown list to make it easier to spot new extensions on devices.
 
-I had a quick go at trying to scrape the chrome store in order to automatically generate the extensionMapper array, but after a quick go it I didn't have any more time to spend on it, I might revisit this in the future at some point as this would save **a lot** of time getting this script boot strapped!
+I had a quick go at trying to scrape the chrome store in order to automatically generate the extensionMapper array, but after a quick go it I didn't have any more time to spend on it, I might revisit this in the future at some point as this would save **a lot** of time getting this script bootstrapped!
 
 Want to go look at this project, you can find it on <a target="_blank" href="https://github.com/ewancolyer/chrome-extension-tools">GitHub</a>
+
