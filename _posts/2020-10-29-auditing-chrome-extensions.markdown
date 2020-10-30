@@ -142,5 +142,7 @@ I have come across a fair few extensions that can not be found in the chrome sto
 
 I had a quick go at trying to scrape the chrome store in order to automatically generate the extensionMapper array, but after a quick go it I didn't have any more time to spend on it, I might revisit this in the future at some point as this would save **a lot** of time getting this script bootstrapped!
 
-Want to go look at this project, you can find it on <a target="_blank" href="https://github.com/ewancolyer/chrome-extension-tools">GitHub</a>
+# Where to find this project?
+
+You can find it on <a target="_blank" href="https://github.com/ewancolyer/chrome-extension-tools">GitHub</a>, any questions ping me a message on the <a href="MACAdmins.org">Mac Admins</a> slack
 
