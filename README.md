@@ -1,3 +1,3 @@
 ## My blog
 
-This is the home of my soon to be published blog, see blog.ewan-colyer.co.uk :)
+This is the home of my blog, see blog.ewan-colyer.co.uk :)
