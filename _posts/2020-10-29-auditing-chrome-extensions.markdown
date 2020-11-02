@@ -85,7 +85,7 @@ I decided to use a CSV for this, mostly because having not used my MDM's API bef
 # What does the script do?
 
 <li>Loads the CSV and manipulates the data into a json array</li>
-<li>Checks if the data exists in the extensionsMapper array, if it does add to a known array, if not add to a unknown one</li>
+<li>Checks if the data exists in the extensions_mapper array, if it does add to a known array, if not add to a unknown one</li>
 <li>If the ID already exists in one of the arrays add 1 to the count</li>
 <li>Then repeat this for the whole of the origional array</li>
 <li>Finally write both arrays to file</li>
@@ -97,24 +97,24 @@ The array that is spat out by the csvLoader() will look something like the below
 ["id1","id2","id3","id2","id3","id1"]
 {% endhighlight %}
 
-Your `input/extensionsMapper` file should look like the below, obviously you would duplicate this object for each extension, the script then iterates through this array for every extension and works out whether it should add it to the known or unknown list.
+Your `input/extensions_mapper` file should look like the below, obviously you would duplicate this object for each extension, the script then iterates through this array for every extension and works out whether it should add it to the known or unknown list.
 
 {% highlight json %}
 [
     {
         "id":"exampleChromeExtensionID",
-        "extensionName":"extensionName",
+        "extension_name":"extension_name",
         "publisher":"nameOfPublisher"
     },
 ]{% endhighlight %}
 
-If the extension is found in the extensionsMapper array it is referred to as a "Known extension", otherwise an "Unknown extension". Below you will see an example of an object that is in the known list:
+If the extension is found in the extensions_mapper array it is referred to as a "Known extension", otherwise an "Unknown extension". Below you will see an example of an object that is in the known list:
 
 {% highlight json %}
 [
     {
         "id": "ggjhpefgjjfobnfoldnjipclpcfbgbhl", 
-        "extensionName": "My Apps Secure Sign-in Extension", 
+        "extension_name": "My Apps Secure Sign-in Extension", 
         "publisher": "Microsoft", 
         "count": 1
     }
@@ -138,7 +138,7 @@ Hopefully, the info in these 2 arrays will give you enough info for you to start
 
 # Plans for the future/issues:
 
-I have come across a fair few extensions that can not be found in the chrome store, so I am thinking of adding a "KnowUnknown" array to take these out of the unknown list to make it easier to spot new extensions on devices.
+I have come across a fair few extensions that can not be found in the chrome store, so I am thinking of adding a "know_unknown" array to take these out of the unknown list to make it easier to spot new extensions on devices.
 
 I had a quick go at trying to scrape the chrome store in order to automatically generate the extensionMapper array, but after a quick go it I didn't have any more time to spend on it, I might revisit this in the future at some point as this would save **a lot** of time getting this script bootstrapped!
 
